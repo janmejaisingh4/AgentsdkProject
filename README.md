@@ -2,8 +2,6 @@
 
 > Build reliable, provider-independent AI agents with tools, memory, guardrails, handoffs, streaming, and observable execution.
 
-[![CI](https://github.com/OWNER/REPOSITORY/actions/workflows/ci.yml/badge.svg)](https://github.com/OWNER/REPOSITORY/actions/workflows/ci.yml)
-
 AgentSDK is a compact, open-source TypeScript runtime for agents that must do more than produce text. Its orchestration loop is written from scratch and deliberately visible: model calls, tool validation, approvals, transfers, limits, sessions, and traces have explicit types and behavior. The badge uses a placeholder until this repository has a GitHub remote.
 
 ## Why it is useful
