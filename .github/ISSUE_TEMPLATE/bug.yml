@@ -1,0 +1,20 @@
+name: Bug report
+description: Report reproducible SDK behavior
+title: "[bug]: "
+body:
+  - type: textarea
+    attributes:
+      label: Reproduction
+      description: Provide a minimal credential-free reproduction.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: VasuAgent, Node, and pnpm versions
+    validations:
+      required: true

@@ -1,0 +1,39 @@
+{
+  "name": "heybabyagent",
+  "private": true,
+  "packageManager": "pnpm@10.14.0",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "pnpm -r build",
+    "dev": "pnpm --filter @vasuagent/playground dev",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "typecheck": "pnpm -r typecheck",
+    "lint": "biome check .",
+    "format": "biome check --write .",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "example:basic": "tsx examples/basic-agent/index.ts",
+    "example:tools": "tsx examples/tool-agent/index.ts",
+    "example:handoff": "tsx examples/multi-agent-handoff/index.ts",
+    "example:structured": "tsx examples/structured-output/index.ts",
+    "example:memory": "tsx examples/persistent-memory/index.ts",
+    "example:approval": "tsx examples/approval-guardrail/index.ts",
+    "example:streaming": "tsx examples/streaming-agent/index.ts"
+  },
+  "devDependencies": {
+    "@vasuagent/core": "workspace:*",
+    "@types/node": "^22.15.30",
+    "@biomejs/biome": "^2.1.2",
+    "@changesets/cli": "^2.29.5",
+    "@vitest/coverage-v8": "^3.2.4",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
+    "vitepress": "^1.6.3",
+    "vitest": "^3.2.4",
+    "zod": "^3.25.76"
+  }
+}
